@@ -507,7 +507,7 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 
 /*my new code start*/
 .bg_spin_img{
-	
+	display: none;
 }
 .new_quiz_box{
 	margin-top: 50px;
@@ -523,27 +523,40 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 	font-size: 25px !important;
 	font-weight: 700 !important;
 	line-height: 30px !important;
-	background-color:  #7f8c8d !important;
+	background: linear-gradient(to bottom, #d2640c 0%, #ffa800 100%) !important;
 	color: #fff !important;
 	text-transform: uppercase;
 	border: none;
-	transition: .4s;
+	
 	padding: 10px;
 }
-.new_start_btn:hover{
-	transform: scale(1.05);
+.btn-danger{
+	background: linear-gradient(to bottom, #d2640c 0%, #ffa800 100%) !important;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+.btn-danger:focus{
+	box-shadow: none !important;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: inherit;
+    
+}
+
 #quiz-header{
-	background-color:  #34495e;
+	background-color:  #310E28;
 	border: none;
 	padding: 40px 30px;
 	width: 100%;
-	transition: .4s;
+	margin-top: 50px;
+	
 	
 }
-#quiz-header:hover{
-	transform: scale(.98);
-}
+
 #quiz-header h1{
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 25px;
@@ -553,11 +566,18 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 #quiz-header p{
 	font-family: 'Nunito Sans', sans-serif;
 }
+
+.top_banner img{
+	
+	margin-top: 50px;
+	border-radius: 5px;
+}
 .new_banner_left{
-	min-height: 670px;
+	margin-top: 50px;
+	min-height: 360px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 }
 .new_banner_left h4,
 .new_test_box h4{
@@ -574,7 +594,7 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 }
 .new_test_box{
 	padding: 30px 20px;
-	background-color: #34495e;
+	background-color: #310E28;
 	border-radius: 5px;
 	transition: .4s;
 }
@@ -599,15 +619,27 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 	width: 60%;
 	margin: 0 auto;
 	
-	background-color: #dfe6e9;
+	background-color: #310E28;
+	background: #310E28;
+}
+input{
+	box-shadow: none !important;
+}
+.ques_title{
+	border: none;
+	color: #fff;
 }
 .ques_bar{
 	width: 60%;
-	background-color: #dfe6e9;
+	background-color: #310E28;
+}
+.ques_bar span{
+	border: none;
+	color: #fff;
 }
 .ques_bar .progress-bar {
     
-    background-color: #636e72;
+    background: linear-gradient(to bottom, #d2640c 0%, #ffa800 100%) !important;
 }
 .quiz_start{
 	margin: 0;
