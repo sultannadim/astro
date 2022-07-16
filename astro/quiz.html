@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astrology - Project</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css" />
+    <style>
+      .tab {
+        display: none;
+      }
+
+      .PhoneNumb {
+        text-align: start;
+        background: white !important;
+        border: none !important;
+        color: black !important;
+      }
+
+      .PhoneNumb::placeholder {
+        color: darkgray !important;
+      }
+    </style>
+  </head>
+  <body class="form_body">
+    <div class="bg_spin_img">
+      <img src="assets/img/banner_image.png" alt="" class="img-responsive" />
+    </div>
+    <div class="container">
+      <div class="quiz_start">
+        <div class="text-center">
+          <a href="index.php"
+            ><img src="assets/img/logo3.webp" style="width: 15%"
+          /></a>
+        </div>
+        <div class="ques_bar" style="margin-bottom: 30px">
+          <span>Question: <span id="countfrm">1</span> / 5</span>
+          <span class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="10%"
+              id="set-progress"
+              aria-valuemin="10%"
+              aria-valuemax="100"
+              style="width: 20%"
+            ></div>
+          </span>
+        </div>
+        <div class="question_container">
+          <div class="input_area">
+            <form id="mongkolForm" action="save_result.php" method="POST">
+              <div class="tab">
+                <div class="ques_title">Enter Your name :</div>
+                <input
+                  type="text"
+                  id="name"
+                  name="radio0"
+                  class="form-control PhoneNumb"
+                  placeholder="Enter your name"
+                  value=""
+                />
+              </div>
+              <div class="tab" id="">
+                <div class="ques_title">What is your city Name?</div>
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <label>
+                      <input type="radio" name="radio1" value="Ahmedabad" />
+                      <span>Ahmedabad</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio1" value="Delhi" />
+                      <span>Delhi</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio1" value="Mumbai" />
+                      <span>Mumbai</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio1" value="Jodhpur" />
+                      <span>Jodhpur</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab" id="">
+                <div class="ques_title">What is your Age?</div>
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <label>
+                      <input type="radio" name="radio2" value="22" />
+                      <span>22</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio2" value="23" />
+                      <span>23</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio2" value="24" />
+                      <span>24</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio2" value="27" />
+                      <span>27</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab" id="">
+                <div class="ques_title">What is your Favorite color?</div>
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <label>
+                      <input type="radio" name="radio3" value="Red" />
+                      <span>Red</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio3" value="Green" />
+                      <span>Green</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio3" value="White" />
+                      <span>White</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="radio3" value="Blue" />
+                      <span>Blue</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab">
+                <div class="ques_title">Enter Your Phone Number :</div>
+                <input
+                  type="tel"
+                  id="mob"
+                  name="mob"
+                  class="form-control PhoneNumb"
+                  placeholder="Enter your phone number"
+                  value=""
+                />
+              </div>
+              <div class="text-center mt30">
+                <small
+                  style="
+                    background: white;
+                    color: red;
+                    padding: 5px;
+                    margin-left: 12px;
+                    border-radius: 3px;
+                    display: none;
+                  "
+                  id="show_alert"
+                  >Please select at least one field...</small
+                >
+                <button
+                  type="button"
+                  id="nextBtn"
+                  name="result"
+                  class="btn btn-danger w30 mt-2"
+                  onclick="nextPrev(1)"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/jquery.quiz-min.js"></script>
+    <script src="assets/quiz.js"></script>
+    <script>
+      document.getElementById("show_alert").style.display = "none";
+      var currentTab = 0;
+      showTab(currentTab);
+
+      function showTab(n) {
+        var x = document.getElementsByClassName("tab");
+        x[n].style.display = "block";
+
+        if (n == x.length - 1) {
+          document.getElementById("nextBtn").innerHTML = "Submit";
+        } else if (n == x.length - 0) {
+          document.getElementById("nextBtn").type = "submit";
+        } else {
+          document.getElementById("nextBtn").innerHTML = "Next";
+        }
+      }
+
+      function validateForm(n, option) {
+        var radios = document.getElementsByName(n);
+        var formValid = false;
+
+        var i = 0;
+        if (option == 1) {
+          var value = document.getElementById("name").value;
+          if (value != "") {
+            formValid = true;
+          }
+        }
+
+        while (!formValid && i < radios.length) {
+          if (radios[i].checked) formValid = true;
+          i++;
+        }
+
+        if (!formValid)
+          document.getElementById("show_alert").style.display = "block";
+        return formValid;
+      }
+
+      function nextPrev(n) {
+        var name = false;
+        // var ds = document.getElementById("name").value;
+        // var test = false;
+        // if (ds != null && ds != undefined) {
+        //   currentTab = currentTab + n;
+        // }
+
+        // console.log(ds)
+        // if (ds != "") {
+        //   test = true;
+        // }
+
+        var radiocnt = 0 + currentTab;
+        var radioVal = "radio" + radiocnt;
+
+        console.log(radioVal);
+        if (radiocnt < 4) {
+          if (radiocnt == 0) {
+            name = validateForm(radioVal, 1);
+          } else {
+            name = validateForm(radioVal, 0);
+          }
+          console.log(name);
+        } else {
+          document.getElementById("mongkolForm").submit();
+        }
+
+        if (name == false) {
+          let error = (document.getElementById("show_alert").style.display =
+            "block");
+        }
+
+        if (name == true) {
+          document.getElementById("show_alert").style.display = "none";
+        }
+
+        if (name === true) {
+          var x = document.getElementsByClassName("tab");
+          x[currentTab].style.display = "none";
+          currentTab = currentTab + n;
+
+          if (currentTab >= x.length) {
+            document.getElementById("mongkolForm").submit();
+            return false;
+          }
+        }
+
+        let setCount = (document.getElementById("countfrm").innerText =
+          currentTab + 1);
+
+        let setWidth = "20";
+
+        setWidth = setWidth * (currentTab + 1);
+
+        let setProgress = (document.getElementById("set-progress").style.width =
+          setWidth + "%");
+
+        showTab(currentTab);
+      }
+    </script>
+  </body>
+</html>
