@@ -550,9 +550,21 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 #quiz-header{
 	background-color:  #310E28;
 	border: none;
-	padding: 40px 30px;
+	padding: 0;
 	width: 100%;
 	margin-top: 50px;
+	border-radius: 5px !important;
+	
+	
+}
+.quiz_top_h1{
+	background: linear-gradient(to bottom, #d2640c 0%, #ffa800 100%);
+	padding: 20px 30px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.quize_bottom{
+	padding: 30px;
 	
 	
 }
@@ -561,7 +573,8 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 25px;
 	font-weight: 700;
-	margin-top: 20px;
+	margin: 0;
+	
 }
 #quiz-header p{
 	font-family: 'Nunito Sans', sans-serif;
@@ -596,11 +609,9 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 	padding: 30px 20px;
 	background-color: #310E28;
 	border-radius: 5px;
-	transition: .4s;
+	
 }
-.new_test_box:hover{
-	transform: translateY(-5px);
-}
+
 .new_test_box img{
 	border-radius: 5px;
 }
@@ -653,20 +664,71 @@ input{
 /*form design end*/
 
 /*RESULT PAGE START*/
-.img_frm{
-	transition: .4s;
-}
-.img_frm:hover{
-	transform: translateY(-5px);
-}
+
+
 body,p,h1,h2,h3,h4,h5,h6{
 	font-family: 'Nunito Sans', sans-serif !important;
 }
 p{
 	font-size: 16px !important;
 }
-.flipdown .rotor-group{
-	padding-right: 23px;
+
+
+.as_banner_img{
+	width: 40%;
+}
+.as_banner_img .score_txt{
+	top: 40%;
+}
+.summary_box{
+	min-height: 194px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.head{
+	margin: 0 !important;
+}
+.result_top,
+.result_table,
+.add_banner,
+.result_youtube,
+.result_lucky{
+	margin-bottom: 50px;
+}
+.result_top_text{
+	margin-bottom: 30px;
+}
+.add_banner img{
+	width: 100%;
+	
+}
+.img_frm{
+	border: none;
+}
+.lucky_img{
+	background: linear-gradient(0deg, rgb(0, 0, 0), rgb(39, 39, 39));
+	border-radius: 5px;
+	border: 2px solid seashell;
+	text-align: center;
+}
+.lucky_img img{
+	width: 70% !important;
+}
+.promo{
+	background-color: #310E28;
+}
+.result_input input{
+	background-color: #310E28;
+}
+.vk-comment-load{
+	padding: 20px 30px;
+}
+.vk_comment_text_1 img{
+	margin-top: 15px !important;
+}
+.order_btn{
+	margin: 20px 0;
 }
 /*RESULT PAGE end*/
 
