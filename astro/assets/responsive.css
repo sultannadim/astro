@@ -177,6 +177,16 @@
 }
 /*form page part end*/
 
+/*result page start*/
+.summary_box img{
+    width: 50% !important;
+}
+.result_top_text h2{
+    font-size: 30px;
+}
+}
+/*result page end*/
+
  }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -214,6 +224,12 @@
 }
 /*form page part end*/
 
+/*result page start*/
+
+
+
+/*result page end*/
+
  }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -246,6 +262,13 @@
     width: 70% !important;
 }
 /*form page part end*/
+
+/*result page start*/
+.summary_box img{
+    width: 50% !important;
+}
+
+/*result page end*/
 
  }
 

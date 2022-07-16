@@ -620,6 +620,24 @@ hr{height: 1px !important; background:#fff !important; width: 100% !important; d
 
 /*form design end*/
 
+/*RESULT PAGE START*/
+.img_frm{
+	transition: .4s;
+}
+.img_frm:hover{
+	transform: translateY(-5px);
+}
+body,p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Nunito Sans', sans-serif !important;
+}
+p{
+	font-size: 16px !important;
+}
+.flipdown .rotor-group{
+	padding-right: 23px;
+}
+/*RESULT PAGE end*/
+
 
 
 /*my new code end*/
