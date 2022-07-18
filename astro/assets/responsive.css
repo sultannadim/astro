@@ -229,6 +229,12 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   /*home page start*/
+  .input_area ul li {
+    width: 97%;
+  }
+  .ques_title ul {
+    display: block !important;
+  }
   .new_banner_left {
     min-height: inherit;
     margin-bottom: 20px;
@@ -329,16 +335,14 @@
   .pr_15 {
     padding-right: 15px !important;
   }
-  .footer{
-  
-  padding: 30px 20px;
-
-}
-.footer p{
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer p {
     text-align: justify;
     font-size: 12px !important;
     margin-top: 15px !important;
-}
+  }
 
   /*result page end*/
 }
