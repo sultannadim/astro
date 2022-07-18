@@ -343,6 +343,12 @@
     font-size: 12px !important;
     margin-top: 15px !important;
   }
+  .quize_spin .as_banner_img {
+    width: 55%;
+  }
+  .quize_spin {
+    padding-bottom: 0 !important;
+  }
 
   /*result page end*/
 }
@@ -350,6 +356,9 @@
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /*home page start*/
+  .quize_spin .as_banner_img {
+    width: 35%;
+  }
   .new_banner_left {
     min-height: 330px;
   }

@@ -3036,19 +3036,23 @@ p {
 .order_btn {
   margin: 20px 0;
 }
-.mobile_img .top_banner img{
+.mobile_img .top_banner img {
   border-radius: 0;
 }
-.footer p{
+.footer p {
   font-size: 14px !important;
   font-weight: 300 !important;
   margin: 0px;
   margin-top: 15px;
 }
-.footer{
+.footer {
   background-color: #310e28;
   padding: 40px 30px;
-
+}
+.quize_spin .as_banner_img {
+  float: none;
+  margin: 0 auto;
+  width: 45%;
 }
 
 /*RESULT PAGE end*/
