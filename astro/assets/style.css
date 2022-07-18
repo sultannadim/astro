@@ -2960,6 +2960,7 @@ input {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 /*form design end*/
