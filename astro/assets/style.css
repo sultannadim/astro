@@ -3035,6 +3035,20 @@ p {
 .order_btn {
   margin: 20px 0;
 }
+.mobile_img .top_banner img{
+  border-radius: 0;
+}
+.footer p{
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+.footer{
+  background-color: #310e28;
+  padding: 40px 30px;
+
+}
+
 /*RESULT PAGE end*/
 
 /*my new code end*/

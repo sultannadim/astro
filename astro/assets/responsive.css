@@ -329,6 +329,16 @@
   .pr_15 {
     padding-right: 15px !important;
   }
+  .footer{
+  
+  padding: 30px 20px;
+
+}
+.footer p{
+    text-align: justify;
+    font-size: 12px !important;
+    margin-top: 15px !important;
+}
 
   /*result page end*/
 }
