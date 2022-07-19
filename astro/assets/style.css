@@ -3098,9 +3098,24 @@ p {
 .table tbody {
   background-color: #310e28 !important;
 }
+.rotor-group:first-child{
+  display: none;
+}
+.flipdown{
+  display: flex;
+  justify-content: center;
+}
+.w35{
+  width: 35% !important;
+}
 /* table end */
 
 /*my new code end*/
 
 /*===============================================*/
-/*===============================================*/ ;
+/*===============================================*/ 
+
+
+
+
+
