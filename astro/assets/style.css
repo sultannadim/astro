@@ -3057,7 +3057,50 @@ p {
 
 /*RESULT PAGE end*/
 
+/* score board start */
+.score_board {
+  padding-bottom: 0px;
+}
+.score_board .as_banner_img {
+  width: 60%;
+  float: none;
+  margin: 0 auto;
+}
+.as_banner_img .score_txt {
+  font-size: 40px;
+}
+.as_banner_img .score_txt {
+  top: 42%;
+}
+.result_input.count_input input {
+  background-color: #fff !important;
+  border: 2px solid rgba(0, 0, 0, 0.3) !important;
+  color: #999 !important;
+}
+.result_input.count_input input::placeholder {
+  color: #999 !important;
+}
+/* score board end */
+
+/* table start */
+.table thead {
+  background: linear-gradient(to bottom, #d2640c 0%, #ffa800 100%) !important;
+}
+.table thead th {
+  color: #fff;
+  border-top: 0 !important;
+  padding-left: 20px !important;
+}
+.table td {
+  padding-left: 20px !important;
+  color: #fff;
+}
+.table tbody {
+  background-color: #310e28 !important;
+}
+/* table end */
+
 /*my new code end*/
 
 /*===============================================*/
-/*===============================================*/
+/*===============================================*/ ;

@@ -349,6 +349,20 @@
   .quize_spin {
     padding-bottom: 0 !important;
   }
+  .score_board .as_banner_img {
+    width: 200px;
+  }
+
+  /* count down start */
+  .flipdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .rotor-group:first-child {
+    display: none;
+  }
+  /* count down end */
 
   /*result page end*/
 }
@@ -446,6 +460,9 @@
   }
   .top_banner img {
     margin: 0;
+  }
+  .score_board .as_banner_img {
+    width: 80%;
   }
   /*result page end*/
 }
