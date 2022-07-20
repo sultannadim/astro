@@ -3117,5 +3117,39 @@ p {
 
 
 
+/*=================================*/
+.doughnut {
+    background-image: url('../assets/img/border.webp');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0.8rem;
+    margin: 25px 0;
+}
+.relative {
+    position: relative;
+}
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*=================================*/
+
+
+
 
 
