@@ -3108,6 +3108,18 @@ p {
 .w35{
   width: 35% !important;
 }
+.table_box{
+  padding: 25px 22px;
+  border: 2px solid #d2640c;
+  border-radius: 25px;
+}
+.table{
+  margin-bottom: 0;
+}
+.list_img img{
+  width: 20px;
+  margin: 0 10px;
+}
 /* table end */
 
 /*my new code end*/

@@ -362,6 +362,10 @@
   .rotor-group:first-child {
     display: none;
   }
+  .list_img img{
+  width: 25px !important;
+  margin: 0 10px;
+}
   /* count down end */
 
   /*result page end*/
