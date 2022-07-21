@@ -363,8 +363,16 @@
     display: none;
   }
   .list_img img{
-  width: 25px !important;
-  margin: 0 10px;
+  width: 40px !important;
+  margin: 0 ;
+  margin-bottom: 10px;
+}
+.list_img li{
+  width: 48% !important;
+  
+}
+.list_img label{
+  min-height: 142px;
 }
   /* count down end */
 
